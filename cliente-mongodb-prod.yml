@@ -1,0 +1,14 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: cliente-mongodb
+  data:
+    mongodb:
+      uri: mongodb://prod-mongo-server:27017/clientes_db
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:6071/eureka

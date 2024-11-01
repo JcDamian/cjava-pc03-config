@@ -1,0 +1,16 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: consumer-clientes
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7070/eureka
+
+spring:
+  cloud:
+    loadbalancer:
+      retry: true
